@@ -342,10 +342,6 @@ class Universe {
 
 }
 
-function randomIntegerBetween(min: number,max: number) {
-  return Math.floor(Math.random() * (max - min + 1) + min)
-}
-
 class Atom {
   type: ElementType;
   constructor(type: ElementType) {
@@ -370,16 +366,6 @@ enum ElementType {
   SAND,
   WATER,
 }
-// CurrentContext , Next Context
-interface AtomContext {
-  top: Atom | null;
-  topRight: Atom | null;
-  right: Atom | null;
-  bottomRight: Atom | null;
-  bottom: Atom | null;
-  bottomLeft: Atom | null;
-  left: Atom | null;
-  topLeft: Atom | null;
-}
+
 
 main();
