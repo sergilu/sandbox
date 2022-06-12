@@ -144,7 +144,7 @@ class Display {
     const delta = (Date.now() - this.lastCalledTime)/1000;
     this.lastCalledTime = performance.now();
     this.fps = 1/delta;
-    document.title = this.fps.toString();
+   // document.title = this.fps.toString();
   }
 
   private initEvents() {
